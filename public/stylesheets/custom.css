@@ -1,0 +1,86 @@
+#navmap_wrap {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 710px;
+}
+#navmap {
+    background: url("../images/navmap.png") repeat scroll 0 0 transparent;
+    height: 486px;
+    margin: 10px auto;
+    padding: 0;
+    position: relative;
+    width: 710px;
+}
+#navmap li {
+    margin: 0; 
+    padding: 0; 
+    list-style: none;
+    display: block; 
+    position: absolute;
+}
+
+#navmap a {display:block;}
+
+#artists {left: 81px; top: 94px; width: 102px; height: 349px;}
+#events {left: 216px; top: 382px; width: 153px; height: 105px;}
+#galleries {left: 239px; top: 118px; width: 103px; height: 255px;}
+#musicians {left: 345px; top: 185px; width: 170px; height: 140px;}
+#store {left: 585px; top: 296px; width: 292px; height: 186px;}
+#studio {left: 623px; top: 483px; width: 105px; height: 113px;}
+#blog {left: 712px; top: 378px; width: 129px; height: 220px;}
+#info {left: 425px; top: 335px; width: 159px; height: 265px;}
+
+#artists a {height: 349px;}
+#events a {height: 105px;}
+#galleries a {height: 255px;}
+#musicians a {height: 140px;}
+#store a {height: 186px;}
+#studio a {height: 113px;}
+#blog a {height: 220px;}
+#info a {height: 265px;}
+
+#artists a:hover {background: url(../images/navmap.png) -81px -581px no-repeat;}
+#events a:hover {background: url(../images/navmap.png) -216px -868px no-repeat;}
+#galleries a:hover {background: url(../images/navmap.png) -238px -1092px no-repeat;}
+#musicians a:hover {background: url(../images/navmap.png) -345px -671px no-repeat;}
+#store a:hover {background: url(../images/navmap.png) -584px -1496px no-repeat;}
+#studio a:hover {background: url(../images/navmap.png) -622px -1683px no-repeat;}
+#blog a:hover {background: url(../images/navmap.png) -712px -978px no-repeat;}
+#info a:hover {background: url(../images/navmap.png) -425px -1535px no-repeat;}
+
+/* Navigation */
+
+nav {
+  float: right;
+}
+
+nav {
+  background-color: white;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a:visited {
+  color: #09c;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
