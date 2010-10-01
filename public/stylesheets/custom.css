@@ -1,3 +1,19 @@
+body {
+    background-color: #fff;
+    background-image: url("../images/tile_header.png");
+    background-repeat: repeat-x;
+    margin-top: 0;
+}
+
+.container {
+    width: 710px;
+}
+
+header {
+    padding-top: 20px;
+    background: url("../images/header_bg.png") repeat scroll 0 0 transparent;    
+}
+
 #navmap_wrap {
     margin-left: auto;
     margin-right: auto;
@@ -41,9 +57,9 @@
 #info a {height: 265px;}
 
 #artists a:hover {background: url(../images/navmap.png) -81px -581px no-repeat;}
-#events a:hover {background: url(../images/navmap.png) -216px -868px no-repeat;}
+#events a:hover {background: url(../images/navmap.png) -216px -869px no-repeat;}
 #galleries a:hover {background: url(../images/navmap.png) -238px -1092px no-repeat;}
-#musicians a:hover {background: url(../images/navmap.png) -345px -671px no-repeat;}
+#musicians a:hover {background: url(../images/navmap.png) -345px -672px no-repeat;}
 #store a:hover {background: url(../images/navmap.png) -584px -1496px no-repeat;}
 #studio a:hover {background: url(../images/navmap.png) -622px -1683px no-repeat;}
 #blog a:hover {background: url(../images/navmap.png) -712px -978px no-repeat;}
@@ -52,12 +68,13 @@
 /* Navigation */
 
 nav {
-  float: right;
+  float: none;
+  text-align: center;
+  background-color: #999999;
 }
 
 nav {
-  background-color: white;
-  padding: 0 0.7em;
+  padding: 0;
   white-space: nowrap;
 }
 
@@ -69,18 +86,28 @@ nav ul {
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 0.2em 0;
+  padding: 0;
 }
 
 nav ul li a {
-  padding: 0 5px;
+  padding: 0 10px;
   font-weight: bold;
-}
-
-nav ul li a:visited {
-  color: #09c;
+  font-size: 1em; 
+  color: #ececec;
+  text-decoration: none;
+  background-color: #666666;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+}
+
+/* Round corners */
+
+.round {
+  -moz-border-radius:    5px;
+  -webkit-border-radius: 5px;
+  border-radius:         5px;
 }
