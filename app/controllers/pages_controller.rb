@@ -3,4 +3,8 @@ class PagesController < ApplicationController
     @title = "Home"
   end
 
+  def info
+    @title = "Info"
+  end
+
 end
