@@ -67,7 +67,8 @@ header {
 /* Navigation */
 
 nav {
-  float: left;
+  float: none;
+  display: inline-block;
   text-align: center;
   background-color: #999999;
 }
@@ -103,10 +104,6 @@ nav ul li a:hover {
   text-decoration: none;
   color: #fff;
   background-color: #000;
-}
-
-nav ul li a:visited {
-  color: #fff;
 }
 
 /* Round corners */
