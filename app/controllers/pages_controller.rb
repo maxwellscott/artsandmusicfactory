@@ -7,4 +7,8 @@ class PagesController < ApplicationController
     @title = "Info"
   end
 
+  def blog
+    @title = "Blog"
+  end
+
 end
