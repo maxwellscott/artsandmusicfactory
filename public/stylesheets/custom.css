@@ -75,7 +75,7 @@ header {
 /* Navigation */
 
 nav {
-  display: inline-block;
+  display: block;
   text-align: center;
   background-color: #999999;
 }
