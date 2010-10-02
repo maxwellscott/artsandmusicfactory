@@ -101,10 +101,12 @@ nav ul li a {
   padding: 0 5px;
   margin: 0;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.1em;
   color: #ececec;
   text-decoration: none;
   background-color: #999999;
+  position: relative;
+  bottom: 1px;
 }
 
 nav ul li a:hover {
