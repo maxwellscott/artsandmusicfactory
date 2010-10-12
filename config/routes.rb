@@ -1,5 +1,4 @@
 Artsandmusicfactory::Application.routes.draw do
-  resources :musicians
   
   get 'pages/home'
 
@@ -10,8 +9,7 @@ Artsandmusicfactory::Application.routes.draw do
   match '/blog',        :to => 'pages#blog'
   match '/musicians',   :to => 'pages#musicians'
   
-  match '/sandy',   :to => 'pages#musicians'
-  match '/musician2',   :to => 'pages#musicians'
+  match '/sandy',       :to => 'pages#musicians'
   match '/jeff_dantona',:to => 'pages#jeff'
 
   match "/facebook"      => redirect("http://www.facebook.com/pages/Greenfield-MA/The-Arts-Block/112168088794169?ref=ts")
