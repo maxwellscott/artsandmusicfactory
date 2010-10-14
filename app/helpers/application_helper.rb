@@ -31,7 +31,7 @@ module ApplicationHelper
   end
 
   def artsblock_big
-    artsblock_big = image_tag("artsblock-icon-100.png", :alt => "The Arts Block", :mouseover => "artsblock-icon-100-mouseover.png")
+    artsblock_big = image_tag("artsblock-icon-100.png", :size => "100x100", :alt => "The Arts Block", :mouseover => "artsblock-icon-100-mouseover.png")
   end
 
   def pushkin
@@ -39,7 +39,11 @@ module ApplicationHelper
   end
 
   def pushkin_big
-    pushkin_big = image_tag("pushkin-icon-100.png", :alt => "The Pushkin", :mouseover => "pushkin-icon-100-mouseover.png")
+    pushkin_big = image_tag("pushkin-icon-100.png", :size => "100x100", :alt => "The Pushkin", :mouseover => "pushkin-icon-100-mouseover.png")
+  end
+
+  def newsletter
+    newsletter = image_tag("newsletter.png", :size => "100x100", :alt => "Sign up for our newsletter", :mouseover => "newsletter-mouseover.png")
   end
 
   def sandy_img
