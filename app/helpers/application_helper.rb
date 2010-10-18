@@ -50,36 +50,24 @@ module ApplicationHelper
     sandy_img = image_tag("sandy.jpg", :alt => "Sandy Bailey", :mouseover => "sandy-mouseover.jpg")
   end
 
-  def sandy_nm
-    sandy_nm = "Sandy Bailey"
-  end
-
   def sandy_desc
     sandy_desc = "singer & songwriter"
   end
 
-  def musician2_img
-    musician2_img = image_tag("alecia.jpg", :alt => "Alecia Chakour", :mouseover => "alecia-mouseover.jpg")
+  def alecia_img
+    alecia_img = image_tag("alecia.jpg", :alt => "Alecia Chakour", :mouseover => "alecia-mouseover.jpg")
   end
 
-  def musician2_nm
-    musician2_nm = "Alecia Chakour"
-  end 
-  
-  def musician2_desc
-    musician2_desc = "soul/r&b vocalist"
+  def alecia_desc
+    alecia_desc = "soul/r&b vocalist"
   end
 
-  def musician3_img
-    musician3_img = image_tag("jeff.jpg", :alt => "Jeff D'Antona", :mouseover => "jeff-mouseover.jpg")
+  def jeff_img
+    jeff_img = image_tag("jeff.jpg", :alt => "Jeff D'Antona", :mouseover => "jeff-mouseover.jpg")
   end
 
-  def musician3_nm
-    musician3_nm = "Jeff D'Antona"
-  end 
-  
-  def musician3_desc
-    musician3_desc = "pianist & composer"
+  def jeff_desc
+    jeff_desc = "pianist & composer"
   end  
 
   def myspace

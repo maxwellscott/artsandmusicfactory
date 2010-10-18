@@ -7,13 +7,14 @@ Artsandmusicfactory::Application.routes.draw do
 
   root :to => 'pages#home'
 
-  match '/home',        :to => 'pages#home'
-  match '/info',        :to => 'pages#info'
-  match '/blog',        :to => 'pages#blog'
-  match '/musicians',   :to => 'pages#musicians'
+  match '/home',           :to => 'pages#home'
+  match '/info',           :to => 'pages#info'
+  match '/blog',           :to => 'pages#blog'
+  match '/musicians',      :to => 'pages#musicians'
   
-  match '/sandy',       :to => 'pages#musicians'
-  match '/jeff_dantona',:to => 'pages#jeff'
+  match '/sandy',          :to => 'pages#musicians'
+  match '/jeff_dantona',   :to => 'pages#jeff'
+  match '/alecia_chakour', :to => 'pages#musicians'
 
   match "/facebook"      => redirect("http://www.facebook.com/pages/Greenfield-MA/The-Arts-Block/112168088794169?ref=ts")
   match "/artsblock"     => redirect("http://theartsblock.com")

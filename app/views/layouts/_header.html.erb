@@ -5,16 +5,16 @@
   </div> 
   <nav>
     <ul>
-      <li><a href="/home">HOME</a></li>      
-      <li><a href="http://artsandmusicfactory.com/events.html">EVENTS</a></li>
-      <li><a href="http://artsandmusicfactory.com/artists.html">ARTISTS</a></li>
-      <li><a href="http://artsandmusicfactory.com/galleries.html">GALLERIES</a></li>
-      <li><a href="/musicians">MUSICIANS</a></li>
-      <li><a href="http://artsandmusicfactory.com/pushkin-studio.html">PUSHKIN STUDIO</a></li>
-      <li><a href="http://artsandmusicfactory.com/store/">STORE</a></li>
-      <li><a href="blog">BLOG</a></li>
-      <li><a href="info">INFO &amp; CONTACT</a></li>
-      <li><a href="#">SIGN IN</a></li>
+      <li><%= link_to "HOME", root_path %></li>      
+      <li><%= link_to "EVENTS", '#' %></li>
+      <li><%= link_to "ARTISTS", '#' %></li>
+      <li><%= link_to "GALLERIES", '#' %></li>
+      <li><%= link_to "MUSICIANS", musicians_path %></li>
+      <li><%= link_to "PUSHKIN STUDIO", '#' %></li>
+      <li><%= link_to "STORE", '#' %></li>
+      <li><%= link_to "BLOG", '#' %></li>
+      <li><%= link_to "INFO & CONTACT", info_path %></li>
+      <li><%= link_to "SIGN IN", '#' %></li>
     </ul>
   </nav>
 </header>
