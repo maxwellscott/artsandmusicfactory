@@ -1,6 +1,6 @@
 <footer class="span-24">
-  <div class="left">
-    <%= link_to "The Arts Block", artsblock_path %> 289 Main St</span>
+  <div class="left" style="position:relative;top:50px;">
+    <span><%= link_to "The Arts Block", artsblock_path %> 289 Main St</span>
     <br />
     <span><%= link_to "The Pushkin", pushkin_path %> 4 Federal St</span>
     <br />
@@ -14,5 +14,17 @@
     <%= link_to artsblock_big, artsblock_path %>
     <%= link_to pushkin_big, pushkin_path %>
     <%= link_to newsletter, signup_path %>
+    <div id="usernav_container">
+      <ul id="usernav_list">
+        <% if signed_in? %>
+        <li><%= link_to "USERS", users_path %></li>
+        <li><%= link_to "PROFILE", current_user %></li>
+        <li><%= link_to "SIGN OUT", signout_path, :method => :delete %></li>
+        <li><%= link_to "SETTINGS", edit_user_path(current_user) %></li>
+        <% else %>
+        <li><%= link_to "SIGN IN", signin_path %></li>
+        <% end %>
+      </ul>
+    </div>
   </div>
 </footer>

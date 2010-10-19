@@ -38,6 +38,7 @@ footer {
     margin-left:0 auto;
     margin-bottom:0 auto;
     margin-top:100px;
+    vertical-align:baseline;
 }
 
 .fancollector {
@@ -126,6 +127,18 @@ nav ul li a:hover {
 
 nav ul li a:visited {
   color: #ececec;
+}
+
+#usernav_list li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+  float: right;
+  padding-left: 10px;
+  margin-left: 10px;
+  padding-right: 0;
+  margin-right: 0;
+  text-align: right;
 }
 
 /* Round corners */
@@ -337,4 +350,20 @@ section {
 
 section h1 {
   color: #999999;
+}
+
+section a {
+  color: #999999;
+}
+
+section a:hover {
+  color: #C4C4C4;
+}
+
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
 }
