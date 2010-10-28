@@ -11,7 +11,7 @@ module ApplicationHelper
   end
 
   def logo
-    logo = image_tag("amf_logo_small.png", :alt => "Home")
+    logo = image_tag("amf_logo_small2.png", :alt => "Home")
   end
 
   def blog

@@ -46,4 +46,13 @@ Artsandmusicfactory::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  config.after_initialize do
+    ActiveMerchant::Billing::Base.mode = :production
+    ::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
+      :login => "msprio_1288037301_biz_api1.gmail.com",
+      :password => "4EPH3XFBLV55GRWV",
+      :signature => "AFcWxV21C7fd0v3bYYYRCpSSRl31AQxc.qwy9pzjJ7g603Ib.oPW9kmN"
+    )
+  end
 end

@@ -6,3 +6,4 @@ Artsandmusicfactory::Application.initialize!
 
 # Gemfile
   gem 'gravatar_image_tag'
+

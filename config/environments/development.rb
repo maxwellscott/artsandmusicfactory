@@ -22,4 +22,13 @@ Artsandmusicfactory::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+
+  config.after_initialize do
+    ActiveMerchant::Billing::Base.mode = :test
+      ::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
+      :login => "msprio_1288037301_biz_api1.gmail.com",
+      :password => "4EPH3XFBLV55GRWV",
+      :signature => "AFcWxV21C7fd0v3bYYYRCpSSRl31AQxc.qwy9pzjJ7g603Ib.oPW9kmN"
+    )
+  end
 end

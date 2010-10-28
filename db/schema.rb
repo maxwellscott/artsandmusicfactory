@@ -10,12 +10,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101019174152) do
+ActiveRecord::Schema.define(:version => 20101028192241) do
 
-  create_table "fans", :force => true do |t|
-    t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "performers", :force => true do |t|
+    t.string "name"
   end
 
   create_table "users", :force => true do |t|

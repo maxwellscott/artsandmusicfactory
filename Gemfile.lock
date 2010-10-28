@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/merbjedi/active_merchant.git
+  revision: e9f2fe40e9df47d7eece682a1002bd56f943fac1
+  branch: rails3
+  specs:
+    activemerchant (1.5.1)
+      activesupport (>= 2.3.2)
+      builder (>= 2.0.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -43,6 +52,7 @@ GEM
       mime-types
       treetop (>= 1.4.5)
     mime-types (1.16)
+    nifty-generators (0.4.2)
     nokogiri (1.4.3.1)
     polyglot (0.3.1)
     rack (1.2.1)
@@ -90,9 +100,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activemerchant!
   annotate-models (= 1.0.4)
   faker (= 0.3.1)
   gravatar_image_tag (= 0.1.0)
+  nifty-generators
   rails (= 3.0.0)
   rspec (= 2.0.0.beta.18)
   rspec-rails (= 2.0.0.beta.18)

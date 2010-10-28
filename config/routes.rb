@@ -1,4 +1,7 @@
 Artsandmusicfactory::Application.routes.draw do
+
+  resources :performers
+
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
 
@@ -6,8 +9,6 @@ Artsandmusicfactory::Application.routes.draw do
   match '/signin',  :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
   
-  get 'pages/home'
-
   root :to => 'pages#home'
 
   match '/home',           :to => 'pages#home'
