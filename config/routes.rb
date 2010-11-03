@@ -1,7 +1,6 @@
 Artsandmusicfactory::Application.routes.draw do
 
-  resources :performers
-
+  resources :events
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
 
@@ -19,9 +18,11 @@ Artsandmusicfactory::Application.routes.draw do
   match '/sandy',          :to => 'pages#musicians'
   match '/jeff_dantona',   :to => 'pages#jeff'
   match '/alecia_chakour', :to => 'pages#musicians'
+  match '/geoff_vidal',    :to => 'pages#musicians'
+
+  match '/theartsblock', :to => 'pages#artsblock'
 
   match "/facebook"      => redirect("http://www.facebook.com/pages/Greenfield-MA/The-Arts-Block/112168088794169?ref=ts")
-  match "/artsblock"     => redirect("http://theartsblock.com")
   match "/pushkin"       => redirect("http://thepushkin.com")
 
   # The priority is based upon order of creation:

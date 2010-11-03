@@ -253,7 +253,7 @@ input.span-24, textarea.span-24 {width:938px;}
 div.prepend-top, .prepend-top {margin-top:1.5em;}
 div.append-bottom, .append-bottom {margin-bottom:1.5em;}
 .box {padding:1.5em;margin-bottom:1.5em;background:#e5eCf9;}
-hr {background:#fff;color:#fff;clear:both;float:none;width:100%;height:1px;margin:0 0 1.45em;border:none;}
+hr {background:#353535;color:#353535;clear:both;float:none;width:100%;height:1px;margin:0 0 1em;border:none;}
 hr.space {background:#fff;color:#fff;visibility:hidden;}
 .clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
 .clearfix, .container {display:block;}

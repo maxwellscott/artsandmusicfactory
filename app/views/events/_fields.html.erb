@@ -1,0 +1,21 @@
+<%= render 'shared/error_messages', :object => f.object %>
+<div class="field">
+  <%= f.label :performer %><br />
+  <%= f.text_field :performer %>
+</div>
+<div class="field">
+  <%= f.label :date %><br />
+  <%= f.text_field :date %>
+</div>
+<div class="field">
+  <%= f.label :description %><br />
+  <%= f.text_field :description %>
+</div>
+<div class="field">
+  <%= f.label :price %><br />
+  <%= f.text_field :price %>
+</div>
+<div class="actions">
+  <%= f.submit "Add" %>
+</div>
+

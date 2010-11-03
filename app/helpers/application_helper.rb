@@ -14,6 +14,10 @@ module ApplicationHelper
     logo = image_tag("amf_logo_small2.png", :alt => "Home")
   end
 
+  def ab_logo
+    ab_logo = image_tag("ab_logo.png", :alt => "The Arts Block")
+  end
+
   def blog
     blog = image_tag("blog-icon-black-50.png", :alt => "Blog", :mouseover => "blog-icon-black-50-mouseover.png")
   end
@@ -70,8 +74,16 @@ module ApplicationHelper
     jeff_desc = "pianist & composer"
   end  
 
+  def geoff_img
+    geoff_img = image_tag("geoff.jpg", :alt => "Geoff Vidal", :mouseover => "geoff-mouseover.jpg")
+  end
+
+  def geoff_desc
+    geoff_desc = "saxophonist & composer"
+  end
+
   def myspace
-    myspace = image_tag("myspace_button.png", :size => "75x75", :alt => "find this musician at myspace.com", :mouseover => "myspace_button-mouseover.png")
+    myspace = image_tag("myspace_button.png", :alt => "find this musician at myspace.com", :mouseover => "myspace_button-mouseover.png", :size => "100x100")
   end
 
 end

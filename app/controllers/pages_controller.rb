@@ -20,4 +20,8 @@ class PagesController < ApplicationController
     @title = "Jeff D'Antona"
   end
 
+  def artsblock
+    @title = "The Arts Block"
+  end
+
 end

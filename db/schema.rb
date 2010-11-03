@@ -10,10 +10,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101028192241) do
+ActiveRecord::Schema.define(:version => 20101029212411) do
 
-  create_table "performers", :force => true do |t|
-    t.string "name"
+  create_table "events", :force => true do |t|
+    t.string "date"
+    t.string "performer"
+    t.text   "description"
+    t.string "price"
   end
 
   create_table "users", :force => true do |t|

@@ -272,11 +272,12 @@ nav ul li a:visited {
 
 #biotext p{padding-bottom:10px;padding-right:10px;}
 
-#music{padding:10px 0px 30px 10px;}
+#music{padding:10px 0px 10px 10px;}
 #music ul {list-style-type:none;margin-top:20px;}
-#music ul li {line-height:1.2em;}
-#music audio {width:150px;margin-right:10px;position:relative;top:6px;}
+#music ul li {line-height:30px;}
+#music audio {width:150px;height:20px;margin-right:10px;}
 #music a {font-size:1.3em;margin-right:10px;background-color:#999999;color:#FFFFFF;padding:3px;}
+#music a:hover {background-color:#353535;}
 #music span {font-size:1.3em;}
 
 /* User show page */

@@ -1,0 +1,10 @@
+<section>
+<h1>Add event</h1>
+
+<%= form_for(@event) do |f| %>
+  <%= render 'fields', :f => f %>
+  <div class="actions">
+    <%= f.submit "Add event" %>
+  </div>
+<% end %>
+</section>
