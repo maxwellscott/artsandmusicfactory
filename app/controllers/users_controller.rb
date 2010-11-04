@@ -33,6 +33,7 @@ class UsersController < ApplicationController
 
   def edit
     @title = "Edit user"
+    @event =  Event.find(params[:id])
   end
 
   def update

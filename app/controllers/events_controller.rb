@@ -1,7 +1,7 @@
 class EventsController < ApplicationController
   
   before_filter :admin_user,   :only => [:new, :create, :edit, :update, :destroy]
-
+  
   def new
     @event = Event.new
     @title = "Create new event"
@@ -9,7 +9,7 @@ class EventsController < ApplicationController
 
   def index
     @events = Event.paginate(:page => params[:page])
-    @title = "Events Listing"
+    @title = "Roster"
   end
 
   def create
@@ -24,15 +24,29 @@ class EventsController < ApplicationController
   end
 
   def edit
+    @title = "Edit event"
+    @event =  Event.find(params[:id])
   end
 
   def update
+    if @event.update_attributes(params[:event])
+      flash[:success] = "Profile updated."
+      redirect_to @event
+    else
+      @title = "Edit event"
+      render 'edit'
+    end
   end
 
   def destroy
+    Event.find(params[:id]).destroy
+    flash[:success] = "Event destroyed."
+    redirect_to events_path
   end
 
   def show
+    @event = Event.find(params[:id])
+    @title = @event.name
   end
 
   private 

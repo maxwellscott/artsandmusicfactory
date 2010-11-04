@@ -10,7 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101029212411) do
+ActiveRecord::Schema.define(:version => 20101103220812) do
+
+  create_table "cart_items", :force => true do |t|
+    t.integer  "event_id"
+    t.integer  "cart_id"
+    t.float    "price"
+    t.integer  "amount"
+    t.datetime "created_at"
+  end
+
+  create_table "carts", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "events", :force => true do |t|
     t.string "date"

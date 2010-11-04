@@ -1,5 +1,6 @@
 <li>
   <%= link_to event.name, event %>
+  <%= link_to event.price, event %>
   <% if signed_in? && current_user.admin? %>
   | <%= button_to "delete", event, :method => :delete, :confirm => "You sure?",
                                 :title => "Delete #{event.name}" %>

@@ -1,2 +1,11 @@
-<h1>Events#edit</h1>
-<p>Find me in app/views/events/edit.html.erb</p>
+<section>
+<h1>Edit user</h1>
+
+<%= form_for(@event) do |f| %>
+  <%= render 'fields', :f => f %>
+  <div class="actions">
+    <%= f.submit "Update" %>
+  </div>
+<% end %>
+
+</section>
