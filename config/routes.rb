@@ -1,5 +1,7 @@
 Artsandmusicfactory::Application.routes.draw do
 
+  get "users/new"
+
   resources :events
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
